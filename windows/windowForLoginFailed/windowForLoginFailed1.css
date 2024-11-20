@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#interface {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#close-btn {
+    margin: 0px;
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    height: 30px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+#buttons {
+    margin: 15px 10px 0px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#buttons button {
+    margin-right: 10px;
+    width: 83px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    background-color: #fff;
+}
+
+#buttons > :last-child {
+    background-color: #0099FF;
+    color: #fff;
+}

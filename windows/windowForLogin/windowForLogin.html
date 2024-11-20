@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="windowForLogin.css">
+    <link rel="stylesheet" href="../../fontawesome-free-6.6.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="login-interface">
+        <div id="title-bar">
+            <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <button id="setting-btn"><img src="../../image/setting.png" alt="设置"></button>
+        </div>
+        <div id="content">
+            <form action="" method="post" id="login-form">
+                <div id="profilePhoto-container">
+                    <img src="../../image/QQ_logo.png" alt="头像" id="profilePhoto">
+                </div>
+                <input type="text" id="QQnumber" class="input" name="QQnumber" placeholder="输入QQ号" required>
+                <input type="password" id="QQpassword" class="input" name="QQpassword" placeholder="输入QQ密码" required>
+                <div id="agreement-container">
+                    <input type="checkbox" id="agreement-checkbox" required>
+                    <label for="agreement-checkbox"></label>
+                    <span id="agreement-text">
+                        已阅读并同意<a href="https://rule.tencent.com/rule/46a15f24-e42c-4cb6-a308-2347139b1201" id="agreement-link1">服务协议</a>和
+                        <a href="https://rule.tencent.com/rule/3fd52bde-6555-453b-9ab8-c5f1f3d22c62" id="agreement-link2">QQ隐私保护指引</a>
+                    </span>
+                </div>
+                <button type="submit" id="login-btn" disabled>登录</button>
+                <div id="bottom">
+                    <span>
+                        <button href="" type="button" class="bottom-text" id="scan-login-btn">扫码登录</button>
+                    </span>
+                    <span class="separator">|</span>
+                    <span id="bottom-text-container">
+                        <button type="button" href="" class="bottom-text" id="more-option-btn">更多选项</button>
+                        <div id="more-option-container">
+                            <button id="register-btn" type="button">注册账号</button>
+                            <button id="forget-password-btn">忘记密码</button>
+                        </div>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="windowForLogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="windowForRegister.css">
+    <link rel="stylesheet" href="../../fontawesome-free-6.6.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="register-interface">
+        <div id="title-bar">
+            <button id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <button id="minimize-btn"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div id="content">
+            <form id="register-form" action="http://localhost:" method="post">
+                <p id="welcome">欢迎注册QQ</p>
+                <input id="nickname-input" class="input" type="text" placeholder="输入昵称">
+                <div id="error-nickname-input">
+                    <span>!</span>
+                    <p id="error-nickname-input-text">昵称不可以为空</p>
+                </div>
+                <input id="password-input" class="input" type="password" placeholder="输入QQ密码">
+                <div id="password-requirements">
+                    <div><span class="required">√</span><p>不能包括空格</p></div>
+                    <div><span class="required">√</span><p>长度为8-16个字符</p></div>
+                    <div><span class="required">√</span><p>必须包含字母、数字、符号中至少2种</p></div>
+                    <div><span class="required">√</span><p>请勿输入连续、重复6位以上字母或数字，如abcdefg、1111111、0123456</p></div>
+                </div>
+                <div id="error-password-input">
+                    <span>!</span>
+                    <p id="error-password-input-text"></p>
+                </div>
+                <div id="phone-input-container">
+                    <div class="input" id="phone-input">
+                        <button id="phone-select-btn" type="button">
+                            <select name="" id="phone-select">
+                                <option id="phone-select-text" value="">+86</option>
+                            </select>
+                        </button>
+                        <input type="tel" placeholder="输入手机号码">
+                    </div>
+                    <div id="available-phone">
+                        <span class="available-phone-text">
+                            <p>中国 +86</p>
+                            <p class="available-phone-value">+86</p>
+                        </span>
+                        <span class="available-phone-text">
+                            <p>中国香港特别行政区 +852</p>
+                            <p class="available-phone-value">+852</p>
+                        </span>
+                        <span class="available-phone-text">
+                            <p>中国澳门特别行政区 +853</p>
+                            <p class="available-phone-value">+853</p>
+                        </span>
+                        <span class="available-phone-text">
+                            <p>中国台湾地区 +886</p>
+                            <p class="available-phone-value">+886</p>
+                        </span>
+                    </div>
+                </div>
+                <div id="agreement-container">
+                    <input type="checkbox" id="agreement-checkbox">
+                    <label for="agreement-checkbox"></label>
+                    <span>已阅读并同意</span>
+                    <a class="agreement-link" href="https://rule.tencent.com/rule/46a15f24-e42c-4cb6-a308-2347139b1201">服务协议</a>
+                    <span>和</span>
+                    <a class="agreement-link" href="https://rule.tencent.com/rule/3fd52bde-6555-453b-9ab8-c5f1f3d22c62">QQ隐私保护指引</a>
+                </div>
+                <button id="register-btn" type="submit">立即注册</button>
+                <div id="error-agreement-checkbox">
+                    <span>!</span>
+                    <p>请先同意服务条款和隐私政策</p>
+                </div>
+                <p id="end-text">Copyright © 1998-2024 Tencent All Rights Reserved.</p>
+            </form>
+        </div>
+    </div>
+    <script src="windowForRegister.js"></script>
+</body>
+</html>

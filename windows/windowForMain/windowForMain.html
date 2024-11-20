@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="windowForMain.css">
+</head>
+<body>
+    <div id="interface">
+        <div id="titleBar">
+            <button id="closeWindowButton">×</button>
+        </div>
+        <div id="content">
+            <div id="contact">
+                <form action="" method="post" id="addContactForm">
+                    <input type="text" id="contactIdInput">
+                    <button id="addContactButton">添加联系人</button>
+                </form>
+                <div>
+                    <ul id="contactList"></ul>
+                </div>
+            </div>
+            <div id="chat">
+                <div id="contactName">请选择联系人</div>
+                <div id="chatWindow"></div>
+                <input id="messageInput" type="text">
+                <button id="sendButton">发送</button>
+            </div>
+        </div>
+    </div>
+    <script src="windowForMain.js"></script>
+</body>
+</html>

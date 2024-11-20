@@ -1,0 +1,41 @@
+#interface {
+    display: flex;
+    flex-direction: column;
+}
+
+#titleBar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#closeWindowButton:hover {
+    background-color: red;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+}
+
+#contactList li:hover {
+    background-color: aqua;
+}
+
+#chatWindow {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+#contactName {
+    text-align: center;
+}
+
+#messageInput {
+    display: none;
+}
+
+#sendButton {
+    display: none;
+}
